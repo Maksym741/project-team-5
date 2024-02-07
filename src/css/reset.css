@@ -1,6 +1,6 @@
 /* Reset styles */
-body{
-  font-family: "Inter", sans-serif;
+body {
+  font-family: 'Inter', sans-serif;
   background-color: #040306;
 }
 
@@ -14,7 +14,8 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -39,5 +40,5 @@ img {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
