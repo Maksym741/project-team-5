@@ -30,7 +30,7 @@
 
 .advantages-item:nth-child(3),
 .advantages-item:nth-child(4) {
-  min-width: 292px;
+  width: 100%;
 }
 
 .advantages-number::after {
@@ -70,5 +70,10 @@
   }
   .advantages-number::after {
     width: 295px;
+  }
+
+  .advantages-item:nth-child(3),
+  .advantages-item:nth-child(4) {
+    min-width: 292px;
   }
 }
