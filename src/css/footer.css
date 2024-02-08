@@ -20,12 +20,12 @@ main {
   background-color: #1b414b;
 }
 
-.anchors-container {
+.footer-anchors-container {
   display: flex;
 }
 
 .footer-logo {
-  padding-right: 37px;
+  margin-right: 37px;
 
   font-weight: 500;
   font-size: 14px;
@@ -73,8 +73,8 @@ main {
   justify-content: center;
   gap: 8px;
 
-  padding-top: 80px;
-  padding-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 .footer-link {
