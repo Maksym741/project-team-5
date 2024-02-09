@@ -1,10 +1,9 @@
 .hero {
   min-width: 320px;
-  position: absolute;
-  inset: 0;
+  min-height: 100%;
   background-color: #1b414b;
   background-image: linear-gradient(rgba(17, 19, 31, 0.39), rgba(17, 19, 31, 0)),
-    url(../img/hero\ 1X-min.jpg);
+    url(../img/hero/hero-desktop-1X-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,6 +14,13 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 260px 20px 302px;
+}
+
+.hero-title,
+.hero-text,
+.button {
+  color: #fbfbfb;
 }
 
 .hero-title {
@@ -23,10 +29,8 @@
   line-height: 32px;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #fbfbfb;
-  margin-top: 198px;
-  margin-bottom: 24px;
   max-width: 335px;
+  margin-bottom: 24px;
 }
 
 .hero-text {
@@ -43,7 +47,6 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.02em;
-  color: #fbfbfb;
   cursor: pointer;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -62,14 +65,99 @@
   color: #1b414b;
 }
 
-@media screen and(min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+/* Медіа-запит для планшетів (від 768px) */
+@media screen and (min-width: 768px) {
   .hero {
+    min-width: 768px;
     background-image: linear-gradient(
         rgba(17, 19, 31, 0.39),
         rgba(17, 19, 31, 0)
       ),
-      url(../img/hero\ 2X-min.jpg);
+      url(../img/hero/hero-tb-1X-min.jpg);
+    background-size: cover;
+  }
+
+  .hero-container {
+    min-width: 768px;
+    padding: 280px 32px 282px;
+  }
+
+  .hero-title {
+    font-size: 70px;
+    line-height: 70px;
+    max-width: 704px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 48px;
+    max-width: 597px;
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 16px 40px;
+    width: 179px;
+    height: 52px;
+  }
+}
+
+/* Медіа-запит для комп'ютерів (від 1280px) */
+@media screen and (min-width: 1280px) {
+  .hero {
+    min-width: 1280px;
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.39),
+        rgba(17, 19, 31, 0)
+      ),
+      url(../img/hero/hero-desktop-1X-min.jpg);
+  }
+
+  .hero-container {
+    min-width: 1280px;
+    padding: 235px 139px 215px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 1001px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 38px;
+  }
+}
+
+/* Медіа-запит для комп'ютерів (від 1440px)*/
+@media screen and (min-width: 1440px) {
+  .hero {
+    min-width: 1440px;
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.39),
+        rgba(17, 19, 31, 0)
+      ),
+      url(../img/hero/hero-desktop2-1X.jpg);
+  }
+
+  .hero-container {
+    min-width: 1440px;
+    padding: 235px 219px 215px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 1001px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 48px;
   }
 }
