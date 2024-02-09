@@ -17,13 +17,6 @@
   padding: 260px 20px 302px;
 }
 
-.hero-title,
-.hero-text,
-.button {
-  font-family: var(--font-family);
-  color: #fbfbfb;
-}
-
 .hero-title {
   font-weight: 500;
   font-size: 32px;
@@ -32,6 +25,7 @@
   text-align: center;
   max-width: 335px;
   margin-bottom: 24px;
+  color: #fbfbfb;
 }
 
 .hero-text {
@@ -41,6 +35,7 @@
   text-align: center;
   color: rgba(251, 251, 251, 0.7);
   margin-bottom: 38px;
+  color: #fbfbfb;
 }
 
 .button {
@@ -58,6 +53,7 @@
   width: 141px;
   height: 46px;
   background: #1b414b;
+  color: #fbfbfb;
 }
 
 .button:hover,
