@@ -1,5 +1,7 @@
 .about-us{
     padding: 0 20px;
+    background-color: #0E1823;
+    padding-bottom: 80px;
 }
 
 .container{
@@ -81,6 +83,7 @@
 @media screen and (min-width: 768px) {
     .about-us{
         padding: 0 32px;
+        padding-bottom: 150px;
     }
     
     .container{
@@ -127,6 +130,7 @@
 @media screen and (min-width: 1280px){
     .about-us{
         padding: 0 50px;
+        padding-bottom: 100px;
     }
     
     .container{
@@ -181,6 +185,7 @@
 @media screen and (min-width: 1440px) {
     .about-us{
         padding: 0 50px;
+        padding-bottom: 100px;
     }
     
     .container{
@@ -199,11 +204,6 @@
         margin-left: 299px;
         max-width: 404px;
     }
-
-
-
-
-
 
     .about-us_image{
         width: 1440px;
