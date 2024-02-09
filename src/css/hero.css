@@ -1,0 +1,92 @@
+.hero {
+  min-width: 320px;
+  min-height: 812px;
+  position: absolute;
+  inset: 0;
+  background-color: #1b414b;
+  background-image: linear-gradient(rgba(17, 19, 31, 0.39), rgba(17, 19, 31, 0)),
+    url(../img/hero/hero\ 1X-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 260px;
+  padding-right: 20px;
+  padding-bottom: 302px;
+  padding-left: 20px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  max-width: 335px;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
+  max-width: 335px;
+  margin-bottom: 38px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 15px;
+  padding: 14px 32px;
+  width: 141px;
+  height: 46px;
+  background: #1b414b;
+}
+
+.button:hover,
+.button:active {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    min-width: 375px;
+    width: 100%;
+  }
+  .hero-container {
+    min-width: 375px;
+    min-height: 812px;
+  }
+}
+
+@media screen and(min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.39),
+        rgba(17, 19, 31, 0)
+      ),
+      url(../img/hero/hero\ 2X-min.jpg);
+  }
+}
