@@ -1,3 +1,82 @@
 <section class="rent-a-yacht">
-    <div class="container"></div>
+  <div class="container">
+    <h2 class="hero-rent-a-yacht">Rent a yacht now</h2>
+    <form class="form-rent-a-yacht">
+      <div class="form-container">
+        <label>
+          <input
+            class="input-rent"
+            type="text"
+            name="name"
+            placeholder="Full Name"         
+          />
+        </label>
+        <label>
+          <input
+            class="input-rent"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+        </label>
+        <label>
+          <input
+            type="tel"
+            pattern="[0-9]+"
+            required
+            name="user-tel"
+            class="input-rent"
+            placeholder="Phone number"
+          />
+        </label>
+        <label>
+          <textarea
+            class="input-rent text-form"
+            name="Comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button class="button-form" type="submit">Send</button>
+    </form>
+    <div class="card-content">
+      <picture>
+        <source
+          srcset="
+            ./img/rent-a-yacht/rent-a-yacht-desk-1440.jpg    1x,
+            ./img/rent-a-yacht/rent-a-yacht-desk-1440-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./img/rent-a-yacht/rent-a-yacht-desk-1280.jpg    1x,
+            ./img/rent-a-yacht/rent-a-yacht-desk-1280-2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/rent-a-yacht/rent-a-yacht-tab.jpg    1x,
+            ./img/rent-a-yacht/rent-a-yacht-tab-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/rent-a-yacht/rent-a-yacht-mob.jpg    1x,
+            ./img/rent-a-yacht/rent-a-yacht-mob-2x.jpg 2x
+          "
+          media="(min-width: 375px)"
+        />
+        <img
+          src="./img/rent-a-yacht/rent-a-yacht-desk-1440.jpg"
+          width="768"
+          alt="rent-a-yacht"
+          class="img-rent-a-yacht"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
+
