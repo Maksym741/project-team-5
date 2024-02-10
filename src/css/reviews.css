@@ -1,10 +1,10 @@
-.reviews {
+.reviews .container {
   max-width: 375px;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 80px;
 }
-.container-title {
-  margin: auto;
+.container-reviews-title {
+  margin: 0 auto;
 }
 .reviews-title {
   font-family: var(--font-family);
@@ -25,7 +25,6 @@
   text-align: center;
   color: #fbfbfb;
   opacity: 0.4;
-  margin: 0 auto;
   margin-bottom: 40px;
 }
 .reviews-item {
@@ -40,8 +39,6 @@
 .reviews-img {
   margin: 0 auto;
   margin-bottom: 24px;
-}
-.reviews-content {
 }
 .reviews-name {
   font-family: var(--font-family);
@@ -64,11 +61,11 @@
 }
 /********REVIEWS MEDIA*******/
 @media screen and (min-width: 768px) {
-  .reviews {
+  .reviews .container {
     max-width: 768px;
     padding-bottom: 150px;
   }
-  .container-title {
+  .container-reviews-title {
     max-width: 704px;
   }
   .reviews-title {
@@ -97,22 +94,31 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .reviews {
+  .reviews .container {
     max-width: 1180px;
   }
-  .container-title {
+  .container-reviews-title {
     max-width: 854px;
     margin: auto;
   }
   .reviews-list {
     gap: 26px;
   }
+  .reviews-item {
+    padding: 32px 28px;
+  }
   .reviews-item:last-child {
     display: inline;
   }
 }
 @media screen and (min-width: 1440px) {
-  .reviews {
+  .reviews .container {
     max-width: 1240px;
+  }
+  .reviews-list {
+    gap: 32px;
+  }
+  .reviews-item {
+    padding: 32px 36px;
   }
 }
