@@ -1,5 +1,12 @@
 /**--------mob-----*/
 
+
+@media screen and (min-width: 320px) {
+    .our-yachts .container {
+        display: block;
+    }
+}
+
 .our-yachts {
     max-width: 100%;
     background-color: #0E1823;
@@ -8,7 +15,6 @@
 
 .our-yachts-container {
     max-width: 375px;
-
 }
 
 .our-yachts-titel {
@@ -35,12 +41,10 @@
 }
 
 .yachts-cover-item {
-
     min-width: 280px;
     padding: 16px 16px 32px 16px;
     background-color: #FBFBFB;
     border-radius: 24px;
-
 }
 
 
@@ -51,7 +55,7 @@
 
 .our-yachts-text-top {
     display: flex;
-    min-width: 206px;
+    width: 270px;
     margin: 0 auto 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(4, 3, 6, 0.1);
@@ -81,7 +85,7 @@
 
 .our-yachts-text-bott {
     display: flex;
-    min-width: 206px;
+    width: 270px;
     height: 109px;
     margin: 0 auto;
 }
@@ -104,7 +108,6 @@
     text-transform: uppercase;
     color: #040306;
     opacity: 0.4;
-
 }
 
 .bott-size-list {
