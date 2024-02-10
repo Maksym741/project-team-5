@@ -4,8 +4,11 @@
 }
 .container-all {
   max-width: 375px;
+  padding-bottom: 80px;
 }
-
+.rent-box-one {
+  margin-bottom: 80px;
+}
 .hero-rent-a-yacht {
   font-weight: 500;
   font-size: 28px;
@@ -67,7 +70,6 @@ textarea:focus {
   letter-spacing: -0.02em;
   padding: 14px 44px;
   margin-top: 40px;
-  margin-bottom: 80px;
   border-radius: 15px;
   background: #1b414b;
   transition: background-clor 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,10 +78,6 @@ textarea:focus {
 .button-form:focus {
   background-color: #fbfbfb;
   color: #1b414b;
-}
-
-.card-content {
-  padding-bottom: 80px;
 }
 
 .img-rent-a-yacht {
@@ -93,10 +91,12 @@ textarea:focus {
     max-width: 100%;
     padding-left: 32px;
     padding-right: 32px;
+    padding-bottom: 150px;
   }
   .rent-box-one {
     max-width: 472px;
     margin: 0 auto;
+    margin-bottom: 100px;
   }
   .hero-rent-a-yacht {
     font-size: 48px;
@@ -121,11 +121,9 @@ textarea:focus {
     padding: 18px 75px;
     font-size: 18px;
     line-height: 1.1;
-    margin-bottom: 100px;
+    margin-top: 50px;
   }
-  .card-content {
-    padding-bottom: 100px;
-  }
+
   .img-rent-a-yacht {
     margin: 0 auto;
   }
@@ -141,9 +139,7 @@ textarea:focus {
   .rent-box-one {
     padding: 0;
     margin-left: 50px;
-  }
-  .card-content {
-    padding-bottom: 150px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1440px) {
