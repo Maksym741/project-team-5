@@ -1,11 +1,8 @@
-/* ----------------------advantages---------------- */
-
 .deskt-wrap,
 .deskt-wrap-img {
 }
 
 .advantages {
-  /* padding-top: 80px; */
   padding-bottom: 80px;
 }
 
@@ -79,6 +76,7 @@
 
   .advantages-img {
     max-width: 335px;
+    /* width: 100%; */
   }
 }
 
@@ -145,6 +143,7 @@
 
   .advantages-item {
     width: calc((100% - 44px) / 2);
+    column-gap: 40px;
   }
 
   .advantages-img {
