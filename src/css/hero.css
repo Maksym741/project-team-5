@@ -3,7 +3,7 @@
   min-height: 100%;
   background-color: #1b414b;
   background-image: linear-gradient(rgba(17, 19, 31, 0.39), rgba(17, 19, 31, 0)),
-    url(../img/hero/hero\ 1X-min.jpg);
+    url(/img/hero/hero\ 1X-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -69,7 +69,7 @@
         rgba(17, 19, 31, 0.39),
         rgba(17, 19, 31, 0)
       ),
-      url(../img/hero/hero-tb-1X-min.jpg);
+      url(/img/hero/hero-tb-1X-min.jpg);
     background-size: cover;
   }
 
@@ -108,7 +108,7 @@
         rgba(17, 19, 31, 0.39),
         rgba(17, 19, 31, 0)
       ),
-      url(../img/hero/hero-desktop-1X-min.jpg);
+      url(/img/hero/hero-desktop-1X-min.jpg);
   }
 
   .hero-container {
@@ -137,7 +137,7 @@
         rgba(17, 19, 31, 0.39),
         rgba(17, 19, 31, 0)
       ),
-      url(../img/hero/hero-desktop2-1X.jpg);
+      url(/img/hero/hero-desktop2-1X.jpg);
   }
 
   .hero-container {
