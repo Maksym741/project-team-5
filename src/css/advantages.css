@@ -70,11 +70,14 @@
 
 @media screen and (min-width: 375px) {
   .advantages-list {
-    min-width: 335px;
+    min-width: unset;
+    width: 335px;
+    margin: 0 auto 20px;
     min-height: 635px;
   }
 
   .advantages-img {
+    margin: 0 auto;
     max-width: 335px;
     /* width: 100%; */
   }
@@ -133,12 +136,14 @@
   }
 
   .advantages .deskt-adv-container {
-    width: 1248px;
+    max-width: 1440px;
+    width: 100%;
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     flex-direction: row;
     column-gap: 32px;
+    justify-content: center;
   }
 
   .advantages-item {
@@ -151,15 +156,17 @@
   }
 
   .advantages-list {
+    width: 714px;
     height: 424px;
     margin-bottom: 0;
+    padding: 90px 50px;
     /* gap: 44px 44px; */
   }
 }
 
 @media screen and (min-width: 1440px) {
   .advantages-list {
-    min-width: 768px;
+    width: 768px;
   }
 
   .advantages-item {
@@ -167,6 +174,6 @@
   }
 
   .advantages-img {
-    width: 504px;
+    width: 540px;
   }
 }
