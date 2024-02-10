@@ -96,6 +96,7 @@
 
   .button {
     font-size: 18px;
+    line-height: 1.1;
     padding: 16px 40px;
     width: 179px;
     height: 52px;
@@ -126,8 +127,6 @@
   }
 
   .hero-text {
-    font-size: 16px;
-    line-height: 1.6;
     margin-bottom: 38px;
   }
 }
