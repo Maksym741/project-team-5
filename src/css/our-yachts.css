@@ -53,9 +53,13 @@
     padding-bottom: 32px;
 }
 
+.our-yachts-text {
+    margin: 0 16px;
+}
+
 .our-yachts-text-top {
     display: flex;
-    width: 270px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(4, 3, 6, 0.1);
@@ -85,9 +89,9 @@
 
 .our-yachts-text-bott {
     display: flex;
-    width: 270px;
+    width: 100%;
     height: 109px;
-    margin: 16px auto;
+    margin: 16px auto 0;
 }
 
 .bott-inf-list {
