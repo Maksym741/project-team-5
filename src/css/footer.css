@@ -1,17 +1,3 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
-}
-
-/* -------------------- */
-/* FOOTER */
-/* -------------------- */
-
 .footer {
   margin: 0 10px;
   padding: 40px 30px 20px 30px;
@@ -20,8 +6,11 @@ main {
   background-color: #1b414b;
 }
 
-.footer-anchors-container {
+.footer-nav {
   display: flex;
+  margin-bottom: 144px;
+
+  position: relative;
 }
 
 .footer-logo {
@@ -41,6 +30,7 @@ main {
 }
 
 .footer-menu-li {
+  max-width: 66px;
   width: calc((100% - 8px) / 3);
   height: 40px;
 }
@@ -69,17 +59,21 @@ main {
 /* SOCIAL MEDIA */
 
 .footer-links {
+  position: absolute;
+  top: 120px;
+  /* top: 120px; така відстань не з неба та не підбором визначалася, це відстань від якірних посилань до слогану компанії мінус висота переліку соцмереж (144-24=120),
+  або відстань від якірних посилань до переліку соцмереж та від переліку соцмереж до слогану компанії (80+40=120) */
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+
   display: flex;
   justify-content: center;
   gap: 8px;
-
-  margin-top: 80px;
-  margin-bottom: 40px;
 }
 
 .footer-link {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,9 +89,8 @@ main {
 }
 
 .footer-motto {
-  max-width: 279px;
   margin: 0 auto;
-  padding-bottom: 82px;
+  margin-bottom: 82px;
 
   font-size: 18px;
   line-height: 1;
@@ -124,8 +117,69 @@ main {
 /* MEDIA */
 /* -------------------- */
 
-@media screen and (min-width: 376px) {
+@media screen and (max-width: 767px) {
+  .footer-motto {
+    max-width: 279px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin: 0 16px;
+    padding: 50px 48px 20px 48px;
+  }
+
+  .footer-nav {
+    justify-content: space-between;
+    margin-bottom: 96px;
+  }
+
+  .footer-logo {
+    margin-right: 110px;
+
+    font-size: 20px;
+  }
+
+  .footer-menu {
+    width: unset;
+  }
+
   .footer-menu-li {
-    max-width: 66px;
+    max-width: 91px;
+    width: 91px;
+  }
+
+  .footer-links {
+    position: unset;
+    transform: none;
+    margin-left: 91px;
+  }
+
+  .footer-motto {
+    max-width: 693px;
+    margin-bottom: 99px;
+    font-size: 32px;
+  }
+
+  .footer-list {
+    gap: 32px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    margin: 0 25px;
+    padding: 50px 75px 20px 75px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-motto {
+    max-width: 699px;
   }
 }
