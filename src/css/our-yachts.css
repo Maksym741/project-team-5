@@ -55,7 +55,7 @@
 
 .our-yachts-text-top {
     display: flex;
-    width: 270px;
+    max-width: 270px;
     margin: 0 auto 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(4, 3, 6, 0.1);
@@ -85,7 +85,7 @@
 
 .our-yachts-text-bott {
     display: flex;
-    width: 270px;
+    max-width: 270px;
     height: 109px;
     margin: 0 auto;
 }
