@@ -55,8 +55,8 @@
 
 .our-yachts-text-top {
     display: flex;
-    max-width: 270px;
-    margin: 0 auto 16px;
+    width: 270px;
+    margin: 0 auto;
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(4, 3, 6, 0.1);
 }
@@ -85,9 +85,9 @@
 
 .our-yachts-text-bott {
     display: flex;
-    max-width: 270px;
+    width: 270px;
     height: 109px;
-    margin: 0 auto;
+    margin: 16px auto;
 }
 
 .bott-inf-list {
@@ -192,7 +192,7 @@
     }
 
     .our-yachts-cover {
-        min-width: 704;
+        min-width: 100%;
         margin-bottom: 50px;
     }
 
@@ -279,6 +279,10 @@
 @media screen and (min-width: 1440px) {
     .our-yachts-container {
         max-width: 1240px;
+    }
+
+    .our-yachts-cover-list {
+        gap: 32px;
     }
 
     .yachts-cover-item {
