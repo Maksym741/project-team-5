@@ -1,13 +1,9 @@
-.section-rent-a-yacht {
-  background: #0e1823;
-  width: 100%;
-}
-
-img {
-  box-sizing: border-box;
-  display: block;
+.rent-a-yacht {
+  background-color: #0e1823;
   max-width: 100%;
-  height: auto;
+}
+.container-all {
+  max-width: 375px;
 }
 
 .hero-rent-a-yacht {
@@ -17,6 +13,7 @@ img {
   letter-spacing: -0.02em;
   color: #fbfbfb;
   margin-bottom: 40px;
+  text-align: start;
 }
 
 .form-container {
@@ -37,8 +34,16 @@ img {
   flex-shrink: 0;
   padding: 14px 18px;
   border-radius: 12px;
-  border: 1px solid rgba(251, 251, 251, 0.2);
+  border: 1px solid rgba(251, 251, 251, 0.5);
   background: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:placeholder-shown {
+  border-color: 1px solid rgba(251, 251, 251, 0.2);
+}
+input:focus,
+textarea:focus {
+  color: #fbfbfb;
 }
 
 .text-form {
@@ -65,12 +70,89 @@ img {
   margin-bottom: 80px;
   border-radius: 15px;
   background: #1b414b;
+  transition: background-clor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-form:hover,
+.button-form:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
 }
 
 .card-content {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .img-rent-a-yacht {
   border-radius: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-all {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .rent-box-one {
+    max-width: 472px;
+    margin: 0 auto;
+  }
+  .hero-rent-a-yacht {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .form-container {
+    justify-content: center;
+  }
+  .input-rent {
+    width: 472px;
+    height: 54px;
+    padding: 18px 18px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .text-form {
+    height: 116px;
+  }
+  .button-form {
+    width: 194px;
+    height: 56px;
+    padding: 18px 75px;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 100px;
+  }
+  .card-content {
+    padding-bottom: 100px;
+  }
+  .img-rent-a-yacht {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-all {
+    flex-direction: row-reverse;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .rent-box-one {
+    padding: 0;
+    margin-left: 50px;
+  }
+  .card-content {
+    padding-bottom: 150px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container-all {
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+  .rent-box-one {
+    padding: 0;
+    margin-left: 50px;
+  }
 }

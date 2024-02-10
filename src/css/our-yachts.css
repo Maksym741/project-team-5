@@ -1,3 +1,5 @@
+/**--------mob-----*/
+
 .our-yachts {
     max-width: 100%;
     background-color: #0E1823;
@@ -69,7 +71,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #040306;
@@ -157,11 +159,15 @@
     }
 }
 
+/**----------------*/
+
+
+/**--------mob-----*/
+
 @media screen and (max-width: 767px) {
     .item-non {
         display: none;
     }
-
 }
 
 
@@ -187,6 +193,7 @@
         margin-bottom: 50px;
     }
 
+
     .yachts-cover-item {
         min-width: 336px;
         height: 508px;
@@ -194,7 +201,30 @@
 
     .our-yachts-text-top,
     .our-yachts-text-bott {
-        min-width: 272px;
+        width: 272px;
+    }
+
+    .text-top-name {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .text-top-lux {
+        font-size: 13px;
+        line-height: 1.18;
+    }
+
+    .our-yachts-btn {
+        width: 179px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 1.1;
+    }
+
+    .our-yachts-btn:hover,
+    .our-yachts-btn:focus {
+        font-size: 18px;
+        line-height: 1.1;
     }
 
 }
@@ -202,5 +232,58 @@
 @media screen and (max-width: 1279px) {
     .item-non-two {
         display: none;
+    }
+
+    .top-name-sp {
+        display: none;
+    }
+}
+
+/**----------------*/
+
+
+/**--------desk-----*/
+
+
+@media screen and (min-width: 1280px) {
+    .our-yachts-container {
+        max-width: 1181px;
+    }
+
+    .our-yachts-titel {
+        min-width: 714px;
+    }
+
+    .our-yachts-cover-list {
+        gap: 25px;
+    }
+
+    .yachts-cover-item {
+        min-width: 377px;
+    }
+
+    .our-yachts-text-top,
+    .our-yachts-text-bott {
+        width: 313px;
+    }
+}
+
+/**----------------*/
+
+
+/**--------desk1440-----*/
+
+@media screen and (min-width: 1440px) {
+    .our-yachts-container {
+        max-width: 1240px;
+    }
+
+    .yachts-cover-item {
+        min-width: 392px;
+    }
+
+    .our-yachts-text-top,
+    .our-yachts-text-bott {
+        width: 328px;
     }
 }
