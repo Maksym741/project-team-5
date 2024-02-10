@@ -3,7 +3,7 @@
   min-height: 100%;
   background-color: #1b414b;
   background-image: linear-gradient(rgba(17, 19, 31, 0.39), rgba(17, 19, 31, 0)),
-    url(/img/hero/hero\ 1X-min.jpg);
+    url(/img/hero/hero-1X-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -155,5 +155,17 @@
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 48px;
+  }
+}
+
+/* ретинізованa версія зображення*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.39),
+        rgba(17, 19, 31, 0)
+      ),
+      url(../img/hero/hero-2X-min.jpg);
   }
 }
