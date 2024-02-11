@@ -56,20 +56,24 @@
 }
 
 .button:hover,
-.button:active {
+.button:active,
+.button:focus {
   background-color: #fbfbfb;
   color: #1b414b;
 }
 
-/* Медіа-запит для планшетів (від 768px) */
+/* Медіа-запити */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/img/hero/hero-2X-min.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     min-width: 768px;
-    background-image: linear-gradient(
-        rgba(17, 19, 31, 0.39),
-        rgba(17, 19, 31, 0)
-      ),
-      url(/img/hero/hero-tb-1X-min.jpg);
+    background-image: url(/img/hero/hero-tb-1X-min.jpg);
     background-size: cover;
   }
 
@@ -80,7 +84,6 @@
 
   .hero-title {
     font-size: 70px;
-    line-height: 1;
     max-width: 704px;
   }
 
@@ -100,15 +103,17 @@
   }
 }
 
-/* Медіа-запит для комп'ютерів (від 1280px) */
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/img/hero/hero-tablet-2X-min.jpg);
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .hero {
     min-width: 1280px;
-    background-image: linear-gradient(
-        rgba(17, 19, 31, 0.39),
-        rgba(17, 19, 31, 0)
-      ),
-      url(/img/hero/hero-desktop-1X-min.jpg);
+    background-image: url(/img/hero/hero-desktop-1X-min.jpg);
   }
 
   .hero-container {
@@ -118,26 +123,25 @@
 
   .hero-title {
     font-size: 80px;
-    line-height: 1;
     max-width: 1001px;
   }
 
   .hero-text {
-    font-size: 16px;
-    line-height: 1.6;
     margin-bottom: 38px;
   }
 }
 
-/* Медіа-запит для комп'ютерів (від 1440px)*/
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/img/hero/hero-desktop-2X-min.jpg);
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .hero {
     min-width: 1440px;
-    background-image: linear-gradient(
-        rgba(17, 19, 31, 0.39),
-        rgba(17, 19, 31, 0)
-      ),
-      url(/img/hero/hero-desktop2-1X.jpg);
+    background-image: url(/img/hero/hero-desktop2-1X-min.jpg);
   }
 
   .hero-container {
@@ -145,27 +149,14 @@
     padding: 235px 219px 215px;
   }
 
-  .hero-title {
-    font-size: 80px;
-    line-height: 1;
-    max-width: 1001px;
-  }
-
   .hero-text {
-    font-size: 16px;
-    line-height: 1.6;
     margin-bottom: 48px;
   }
 }
 
-/* ретинізованa версія зображення*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi) {
+@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(
-        rgba(17, 19, 31, 0.39),
-        rgba(17, 19, 31, 0)
-      ),
-      url(../img/hero/hero-2X-min.jpg);
+    background-image: url(/img/hero/hero-desktop2-2X-min.jpg);
   }
 }
