@@ -240,8 +240,8 @@
 
 }
 
-@media screen and (max-width: 1279px) {
 
+@media screen and (max-width: 1279px) {
     .top-name-sp {
         display: none;
     }
