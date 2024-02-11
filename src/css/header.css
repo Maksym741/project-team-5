@@ -5,7 +5,8 @@
 
 
 .header-page {
-
+    min-width: 280;
+    width: calc(100%-40px);
     top: 20px;
     background-color: #FBFBFB;
     border-radius: 10px;
@@ -90,15 +91,6 @@
 }
 
 
-/* //////////////////////////////////////////////////////////////////////////////////////////// */
-
-
-
-
-
-
-
-
 .nav-social-container {
     
     display: flex;
@@ -171,10 +163,7 @@ margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 8px;
-    
     margin-bottom: 40px;
-   
-    /* margin: 0 auto; */
 }
 
 .mobile-menu-social-icon {
@@ -186,26 +175,14 @@ margin: 0 auto;
     fill: rgba(251, 251, 251, 0.8);
 }
 
+/* ==========MEDIA >>>>320================================= */
 
+/* @media screen and (min-width: 321px){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ?????????????Social media i list menu odstęp ?????????? */
+}
+    .header-page{
+        max-width: 280px;
+    } */
 
 
 /* ==========MEDIA >>>>375================================= */
@@ -238,7 +215,6 @@ margin: 0 auto;
 
     .nav-page {
         display: flex;
-
 
     }
 
@@ -285,7 +261,6 @@ margin: 0 auto;
         background-color: #1B414B;
     }
 
-    /* ////////////////////////////////////////// */
     .header-social-list {
         display: flex;
         list-style: none;
