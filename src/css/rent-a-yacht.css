@@ -132,14 +132,17 @@ textarea:focus {
 @media screen and (min-width: 1280px) {
   .container-all {
     flex-direction: row-reverse;
+    justify-content: center;
     max-width: 100%;
     padding-left: 50px;
     padding-right: 50px;
   }
   .rent-box-one {
     padding: 0;
-    margin-left: 50px;
-    margin-bottom: 0;
+    margin: 0 0 0 50px;
+  }
+  .img-rent-a-yacht {
+    width: 658px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -150,5 +153,8 @@ textarea:focus {
   .rent-box-one {
     padding: 0;
     margin-left: 50px;
+  }
+  .img-rent-a-yacht {
+    width: 768px;
   }
 }
