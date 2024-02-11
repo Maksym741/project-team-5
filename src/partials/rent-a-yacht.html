@@ -1,7 +1,7 @@
-<section class="rent-a-yacht">
+<section id="rent-a-yacht" class="rent-a-yacht">
   <div class="container container-all">
     <div class="rent-box-one">
-      <h2 id="Rent-a-yacht" class="hero-rent-a-yacht">Rent a yacht now</h2>
+      <h2 class="hero-rent-a-yacht">Rent a yacht now</h2>
       <form class="form-rent-a-yacht">
         <div class="form-container">
           <label>
@@ -10,6 +10,7 @@
               type="text"
               name="name"
               placeholder="Full Name"
+              pattern="^[A-Za-z\s]+$"
               required
             />
           </label>
@@ -19,6 +20,7 @@
               type="email"
               name="email"
               placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               required
             />
           </label>
