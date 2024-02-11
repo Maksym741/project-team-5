@@ -5,7 +5,8 @@
 
 
 .header-page {
-
+    min-width: 280;
+    width: calc(100%-40px);
     top: 20px;
     background-color: #FBFBFB;
     border-radius: 10px;
@@ -176,11 +177,13 @@ margin: 0 auto;
 
 /* ==========MEDIA >>>>320================================= */
 
-@media screen and (min-width: 320px){
-    .header-page{
-        min-width: 280px;
-    }
+/* @media screen and (min-width: 321px){
+
 }
+    .header-page{
+        max-width: 280px;
+    } */
+
 
 /* ==========MEDIA >>>>375================================= */
 
