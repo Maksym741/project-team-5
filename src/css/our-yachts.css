@@ -1,11 +1,11 @@
-/**--------mob-----*/
+/**---------------------------our-yachts------------------------------*/
 
 
-@media screen and (min-width: 320px) {
-    .our-yachts .container {
-        display: block;
-    }
+
+.our-yachts .container {
+    display: block;
 }
+
 
 .our-yachts {
     max-width: 100%;
@@ -47,16 +47,30 @@
     border-radius: 24px;
 }
 
+.item-non,
+.item-non-two {
+    display: none;
+}
+
+.top-name-sp {
+    display: none;
+}
+
+
 
 .our-yachts-img {
     border-radius: 24px;
     padding-bottom: 32px;
 }
 
+.our-yachts-text {
+    margin: 0 16px;
+}
+
 .our-yachts-text-top {
     display: flex;
-    max-width: 270px;
-    margin: 0 auto 16px;
+    width: 100%;
+    margin: 0 auto;
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(4, 3, 6, 0.1);
 }
@@ -85,9 +99,9 @@
 
 .our-yachts-text-bott {
     display: flex;
-    max-width: 270px;
+    width: 100%;
     height: 109px;
-    margin: 0 auto;
+    margin: 16px auto 0;
 }
 
 .bott-inf-list {
@@ -165,13 +179,9 @@
 /**----------------*/
 
 
-/**--------mob-----*/
+/**--------tabl-----*/
 
-@media screen and (max-width: 767px) {
-    .item-non {
-        display: none;
-    }
-}
+
 
 
 @media screen and (min-width: 768px) {
@@ -192,7 +202,7 @@
     }
 
     .our-yachts-cover {
-        min-width: 704;
+        min-width: 100%;
         margin-bottom: 50px;
     }
 
@@ -200,6 +210,10 @@
     .yachts-cover-item {
         min-width: 336px;
         height: 508px;
+    }
+
+    .item-non {
+        display: block;
     }
 
     .our-yachts-text-top,
@@ -233,10 +247,6 @@
 }
 
 @media screen and (max-width: 1279px) {
-    .item-non-two {
-        display: none;
-    }
-
     .top-name-sp {
         display: none;
     }
@@ -265,6 +275,15 @@
         min-width: 377px;
     }
 
+    .item-non-two {
+        display: block;
+    }
+
+    .top-name-sp {
+        display: inline;
+    }
+
+
     .our-yachts-text-top,
     .our-yachts-text-bott {
         width: 313px;
@@ -281,6 +300,10 @@
         max-width: 1240px;
     }
 
+    .our-yachts-cover-list {
+        gap: 32px;
+    }
+
     .yachts-cover-item {
         min-width: 392px;
     }
@@ -290,3 +313,5 @@
         width: 328px;
     }
 }
+
+/**---------------------------------------------------------*/
