@@ -170,6 +170,7 @@ margin: 0 auto;
 }
 .mobile-menu-social-link{
     display: flex;
+    justify-content: center;
 }
 
 .mobile-menu-social-icon {
@@ -277,7 +278,6 @@ margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 24px;
         }
         .header-social-link{
             display: flex;
