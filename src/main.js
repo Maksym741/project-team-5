@@ -3,7 +3,6 @@
   const openMenuBtn = document.querySelector('.open-menu');
   const closeMenuBtn = document.querySelector('.close-menu');
   const menuLinks = document.querySelectorAll('.mob-menu-link'); // Виберіть всі посилання в меню
-  mobileMenu.classList.remove('is-open');
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -12,7 +11,7 @@
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
-    bodyScrollLock.enableBodyScroll(document.body);
+    bodyScrollLock[scrollLockMethod](document.body);
   };
   menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', () => {
