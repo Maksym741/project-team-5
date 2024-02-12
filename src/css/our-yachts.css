@@ -157,16 +157,12 @@
     background-color: transparent;
     margin: 0 auto;
     cursor: pointer;
+    transition: background-color .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1);
 }
 
 .our-yachts-btn:hover,
 .our-yachts-btn:focus {
-    background: #fbfbfb;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
+    background-color: #fbfbfb;
     color: #1b414b;
 }
 
